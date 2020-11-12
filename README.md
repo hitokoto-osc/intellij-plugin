@@ -1,2 +1,36 @@
 # intellij-plugin
-适用于 intellij platform 的一言插件
+
+适用于 intellij platform 的一言插件，主要功能为在项目启动后获取一句一言并弹出通知
+
+## 功能
+- [x] 右下角弹出
+- [x] Tools 一言 Action
+- [ ] 适配低版本 intellij sdk
+- [ ] 增加更多功能
+
+## 效果
+
+项目打开时将会在右下角弹出类似如下样式的提示
+
+![](https://alextech-1252251443.cos.ap-guangzhou.myqcloud.com/20201113095010.png)
+
+因使用了 java 11 的API，故 intellij sdk 版本最低要求 intellij idea 2020，后期将会适配低版本
+
+## 安装
+
+到此处下载 jar 包，https://github.com/hitokoto-osc/intellij-plugin/releases ，直接拖动到 intellij IDE中即可自动安装。（可能会要求重启）
+
+![](https://alextech-1252251443.cos.ap-guangzhou.myqcloud.com/20201113100336.png)
+
+
+## 使用
+
+- 项目打开时将会自动获取一言并展示在IDE右下角。打开 EventLog 可以再次查看之前弹出的一言
+
+- 使用菜单栏的 Tools -> 一言 功能，可以手动调用 
+
+## 编译
+
+本项目依赖 intellij sdk，因此必须使用 idea 自带的 gradle 进行编译。
+
+打开顶部菜单栏中的 Navigate -> Search EveryWhere，输入 gradle，选择 Actions 下的 Gradle 回车即可。
