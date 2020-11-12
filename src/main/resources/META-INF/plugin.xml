@@ -1,0 +1,29 @@
+<idea-plugin>
+	<id>intellij-plugin.hitokoto.cn</id>
+	<name>一言</name>
+	<version>1.0</version>
+	<vendor email="im@println.org" url="https://hitokoto.cn">hitokoto</vendor>
+
+	<description><![CDATA[
+		适用于 intellij platform 的一言插件，主要功能为在项目启动后获取一句一言并弹出通知
+		<br>
+		本项目开源仓库地址：<a href="https://github.com/hitokoto-osc/intellij-plugin">https://github.com/hitokoto-osc/intellij-plugin</a>
+		]]></description>
+
+	<idea-version since-build="173.0" />
+	<depends>com.intellij.modules.platform</depends>
+
+	<extensions defaultExtensionNs="com.intellij"></extensions>
+	<actions>
+		<action id="intellij.plugin.YiYanAction" class="src.intellij.plugin.YiYanAction" text="一言"
+		        description="一言网（hitokoto.cn）创立于 2016 年，隶属于萌创团队，目前网站主要提供一句话服务。  ">
+			<add-to-group group-id="ToolsMenu" anchor="last" />
+		</action>
+	</actions>
+
+	<project-components>
+		<component>
+			<implementation-class>src.intellij.plugin.Hook</implementation-class>
+		</component>
+	</project-components>
+</idea-plugin>
