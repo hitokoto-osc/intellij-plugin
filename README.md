@@ -18,7 +18,11 @@
 
 ## 安装
 
-到此处下载 jar 包，https://github.com/hitokoto-osc/intellij-plugin/releases ，直接拖动到 intellij IDE中即可自动安装。（可能会要求重启）
+- [在插件市场中安装（稳定版）](https://plugins.jetbrains.com/plugin/15382)
+
+- 在IDE中使用 Settings Plugins 进行搜索（一言）安装（效果等同插件市场）
+
+- [在开源仓库中下载 jar|zip 包（预览版）](https://github.com/hitokoto-osc/intellij-plugin/releases)，直接拖动到 intellij IDE中即可自动安装。（可能会要求重启）
 
 ![](https://alextech-1252251443.cos.ap-guangzhou.myqcloud.com/20201113100336.png)
 
