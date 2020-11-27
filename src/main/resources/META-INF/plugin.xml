@@ -1,7 +1,7 @@
 <idea-plugin>
 	<id>intellij-plugin.hitokoto.cn</id>
 	<name>Yiyan</name>
-	<version>1.0</version>
+	<version>1.1.0</version>
 	<vendor email="im@println.org" url="https://hitokoto.cn">hitokoto.cn</vendor>
 
 	<description><![CDATA[
@@ -18,12 +18,15 @@
 		2020-11-13 开发完成
 		<br>
 		2020-11-27 重命名插件为 "Yiyan"
-	]]></change-notes>
+		<br>
+		2020-11-27 增加快捷键支持 command + Y
+		]]></change-notes>
 
 	<actions>
 		<action id="intellij.plugin.YiYanAction" class="intellij.plugin.YiYanAction" text="一言"
 		        description="一言网（hitokoto.cn）创立于 2016 年，隶属于萌创团队，目前网站主要提供一句话服务。  ">
 			<add-to-group group-id="ToolsMenu" anchor="last" />
+			<keyboard-shortcut keymap="$default" first-keystroke="meta Y" />
 		</action>
 	</actions>
 
