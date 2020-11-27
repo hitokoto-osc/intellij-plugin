@@ -1,18 +1,24 @@
 <idea-plugin>
 	<id>intellij-plugin.hitokoto.cn</id>
-	<name>一言</name>
+	<name>Yiyan</name>
 	<version>1.0</version>
-	<vendor email="im@println.org" url="https://hitokoto.cn">hitokoto</vendor>
+	<vendor email="im@println.org" url="https://hitokoto.cn">hitokoto.cn</vendor>
 
 	<description><![CDATA[
 		适用于 intellij platform 的一言插件，主要功能为在项目启动后获取一句一言并弹出通知
 		<br>
-		本项目开源仓库地址：<a
-				href="https://github.com/hitokoto-osc/intellij-plugin">https://github.com/hitokoto-osc/intellij-plugin</a>
+		本项目开源仓库地址：
+		<a href="https://github.com/hitokoto-osc/intellij-plugin">https://github.com/hitokoto-osc/intellij-plugin</a>
 		]]></description>
 
 	<idea-version since-build="173.0" />
 	<depends>com.intellij.modules.platform</depends>
+
+	<change-notes><![CDATA[
+		2020-11-13 开发完成
+		<br>
+		2020-11-27 重命名插件为 "Yiyan"
+	]]></change-notes>
 
 	<actions>
 		<action id="intellij.plugin.YiYanAction" class="intellij.plugin.YiYanAction" text="一言"
